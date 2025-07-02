@@ -125,7 +125,7 @@ const UnityHomeCare = () => {
 							</div>
 							<span
 								className={`text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent`}>
-								Unity Home Care
+								Unity HomeCare Services
 							</span>
 						</div>
 
@@ -337,7 +337,7 @@ const UnityHomeCare = () => {
 												? "text-white"
 												: "text-gray-900"
 										}`}>
-										500+
+										200+
 									</div>
 									<div
 										className={`text-sm ${
@@ -581,7 +581,7 @@ const UnityHomeCare = () => {
 						</div>
 
 						<div className="relative">
-							<div className="grid grid-cols-2 gap-4">
+							<div className="grid grid-cols-2 gap-6">
 								<div
 									className={`p-6 rounded-2xl ${
 										darkMode
@@ -743,9 +743,20 @@ const UnityHomeCare = () => {
 								Available 24/7 for emergencies
 							</p>
 							<a
-								href="tel:+254700000000"
+								href="tel:+254703919412"
 								className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-								+254 700 000 000
+								+254 703 919 412
+							</a>
+							<span
+								className={`${
+									darkMode ? "text-gray-300" : "text-gray-600"
+								} mb-4`}>
+								{" / "}
+							</span>
+							<a
+								href="tel:+254719346472"
+								className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+								+254 719 346 472
 							</a>
 						</div>
 
@@ -771,9 +782,9 @@ const UnityHomeCare = () => {
 								Get a detailed response within 24 hours
 							</p>
 							<a
-								href="mailto:info@unityhomecare.co.ke"
+								href="mailto:unityhomecare874@gmail.com"
 								className="text-purple-600 font-semibold hover:text-purple-700 transition-colors">
-								info@unityhomecare.co.ke
+								unityhomecare874@gmail.com
 							</a>
 						</div>
 
@@ -800,8 +811,8 @@ const UnityHomeCare = () => {
 							</p>
 							<p className="text-green-600 font-semibold">
 								Nairobi, Kenya
-								<br />
-								Westlands District
+								{/* <br />
+								Westlands District */}
 							</p>
 						</div>
 					</div>
@@ -848,24 +859,24 @@ const UnityHomeCare = () => {
 						</p>
 						<div className="flex justify-center space-x-6 mb-8">
 							<a
-								href="tel:+254700000000"
+								href="tel:+254703919412"
 								className="text-gray-400 hover:text-white transition-colors">
 								<Phone className="h-6 w-6" />
 							</a>
 							<a
-								href="mailto:info@unityhomecare.co.ke"
+								href="mailto:unityhomecare874@gmail.com"
 								className="text-gray-400 hover:text-white transition-colors">
 								<Mail className="h-6 w-6" />
 							</a>
-							<a
+							{/* <a
 								href="#"
 								className="text-gray-400 hover:text-white transition-colors">
 								<MapPin className="h-6 w-6" />
-							</a>
+							</a> */}
 						</div>
 						<div className="border-t border-gray-700 pt-8">
 							<p className="text-gray-500 text-sm">
-								© 2025 Unity Home Care Services. All rights
+								© 2025 Unity HomeCare Services. All rights
 								reserved. | Licensed Healthcare Provider
 							</p>
 						</div>
