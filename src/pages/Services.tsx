@@ -5,7 +5,7 @@ export const services = [
 			"Comprehensive support during your transition from hospital to home, ensuring continuity of care and peace of mind.",
 		icon: "🏥",
 		color: "from-blue-500 to-cyan-500",
-		image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center",
+		image: "../../public/images/postdischarge.avif",
 	},
 	{
 		title: "Mobility Assistance",
@@ -13,7 +13,7 @@ export const services = [
 			"Safe and dignified support for daily movement, helping maintain independence and prevent falls.",
 		icon: "🚶‍♂️",
 		color: "from-green-500 to-emerald-500",
-		image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=300&fit=crop&crop=center",
+		image: "../../public/images/mobility.avif",
 	},
 	{
 		title: "Feeding & Nutrition Support",
@@ -23,13 +23,14 @@ export const services = [
 		color: "from-orange-500 to-red-500",
 		image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop&crop=center",
 	},
+
 	{
 		title: "Wound Care Management",
 		description:
 			"Professional wound assessment, cleaning, and dressing changes following medical protocols.",
 		icon: "🩹",
 		color: "from-pink-500 to-rose-500",
-		image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center",
+		image: "../../public/images/wound.avif",
 	},
 	{
 		title: "Monitoring Vitals",
@@ -37,7 +38,7 @@ export const services = [
 			"Regular monitoring of blood pressure, temperature, pulse, and other vital signs for your safety.",
 		icon: "📊",
 		color: "from-purple-500 to-violet-500",
-		image: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&h=300&fit=crop&crop=center",
+		image: "../../public/images/monitoring.avif",
 	},
 	{
 		title: "Bathing & Grooming",
@@ -45,7 +46,7 @@ export const services = [
 			"Respectful personal care assistance maintaining dignity while ensuring cleanliness and comfort.",
 		icon: "🛁",
 		color: "from-teal-500 to-cyan-500",
-		image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center",
+		image: "../../public/images/bathing.avif",
 	},
 	{
 		title: "Elderly Home Care",
@@ -53,7 +54,7 @@ export const services = [
 			"Specialized care for seniors, promoting aging in place with comfort, safety, and companionship.",
 		icon: "👵",
 		color: "from-indigo-500 to-blue-500",
-		image: "https://images.unsplash.com/photo-1607206490797-9c3257003e85?w=400&h=300&fit=crop&crop=center",
+		image: "../../public/images/elderly.avif",
 	},
 	{
 		title: "Medication Administration",

@@ -246,7 +246,7 @@ const UnityHomeCare = () => {
 								</button>
 							</div>
 
-							<div className="flex items-center space-x-8">
+							<div className="flex ml-5 items-center space-x-8">
 								<div className="text-center">
 									<div
 										className={`text-3xl font-bold ${
@@ -305,50 +305,11 @@ const UnityHomeCare = () => {
 						</div>
 
 						<div className="relative">
-							<div className="relative z-10">
-								<div
-									className={`rounded-3xl overflow-hidden shadow-2xl ${
-										darkMode
-											? "shadow-blue-900/20"
-											: "shadow-blue-500/20"
-									}`}>
-									<div className="bg-gradient-to-br from-blue-500 to-purple-600 p-8 text-white">
-										<div className="flex items-center space-x-4 mb-6">
-											<div className="text-4xl">
-												{services[activeService].icon}
-											</div>
-											<div>
-												<h3 className="text-xl font-semibold">
-													{
-														services[activeService]
-															.title
-													}
-												</h3>
-												<div className="flex text-yellow-300">
-													{[...Array(5)].map(
-														(_, i) => (
-															<Star
-																key={i}
-																className="h-4 w-4 fill-current"
-															/>
-														)
-													)}
-												</div>
-											</div>
-										</div>
-										<p className="text-blue-100 leading-relaxed">
-											{
-												services[activeService]
-													.description
-											}
-										</p>
-									</div>
-								</div>
-							</div>
-
-							{/* Floating Elements */}
-							<div className="absolute -top-6 -left-6 w-20 h-20 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full opacity-70 animate-pulse"></div>
-							<div className="absolute -bottom-6 -right-6 w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full opacity-70 animate-pulse delay-1000"></div>
+							<img
+								src="../../public/images/hero.avif"
+								alt="Professional nurse providing compassionate care to elderly patient"
+								className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+							/>
 						</div>
 					</div>
 				</div>
@@ -381,11 +342,11 @@ const UnityHomeCare = () => {
 						</p>
 					</div>
 
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
 						{services.map((service, index) => (
 							<div
 								key={index}
-								className={`group p-8 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl ${
+								className={`group relative overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl ${
 									darkMode
 										? "bg-gray-900 hover:shadow-blue-500/10"
 										: "bg-white hover:shadow-blue-500/10"
@@ -394,26 +355,55 @@ const UnityHomeCare = () => {
 										? "border-gray-700"
 										: "border-gray-100"
 								}`}>
-								<div
-									className={`w-16 h-16 rounded-xl bg-gradient-to-r ${service.color} flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform`}>
-									{service.icon}
+								{/* Background Image */}
+								<div className="absolute inset-0 overflow-hidden">
+									<img
+										src={service.image}
+										alt={service.title}
+										className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+									/>
+									<div
+										className={`absolute inset-0 bg-gradient-to-t ${
+											darkMode
+												? "from-gray-900/95 via-gray-900/80 to-gray-900/60"
+												: "from-white/95 via-white/10 to-white/10"
+										}  group-hover:to-gray-900/50 transition-all duration-300`}></div>
 								</div>
-								<h3
-									className={`text-xl font-semibold mb-4 ${
-										darkMode
-											? "text-white"
-											: "text-gray-900"
-									}`}>
-									{service.title}
-								</h3>
-								<p
-									className={`${
-										darkMode
-											? "text-gray-300"
-											: "text-gray-600"
-									} leading-relaxed`}>
-									{service.description}
-								</p>
+
+								{/* Content */}
+								<div className="relative z-10 p-4 sm:p-6 lg:p-8 h-full flex flex-col">
+									{/* Icon */}
+									<div
+										className={`w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl bg-gradient-to-r ${service.color} flex items-center justify-center text-lg sm:text-xl lg:text-2xl mb-4 sm:mb-5 lg:mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
+										{service.icon}
+									</div>
+
+									{/* Title */}
+									<h3
+										className={`text-lg sm:text-xl lg:text-xl font-bold mb-3 sm:mb-4 lg:mb-4 ${
+											darkMode
+												? "text-white"
+												: "text-gray-900"
+										}   group-hover:${
+											service.color
+										}  transition-all duration-300`}>
+										{service.title}
+									</h3>
+
+									{/* Description */}
+									<p
+										className={`text-md font-semibold md:text-base lg:text-base ${
+											darkMode
+												? "text-gray-200"
+												: "text-gray-900"
+										} leading-relaxed flex-grow`}>
+										{service.description}
+									</p>
+
+									{/* Hover indicator line */}
+									<div
+										className={`mt-4 sm:mt-5 lg:mt-6 w-0 h-0.5 bg-gradient-to-r ${service.color} group-hover:w-full transition-all duration-500`}></div>
+								</div>
 							</div>
 						))}
 					</div>
