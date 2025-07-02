@@ -1,11 +1,8 @@
-# Unity Home Care Services Website
+# Unity Home Care Services
 
 A modern, responsive website for Unity Home Care Services - a professional healthcare startup providing compassionate home care services in Nairobi, Kenya.
 
 ![Unity Home Care](https://img.shields.io/badge/Unity-Home%20Care-blue?style=for-the-badge&logo=heart&logoColor=white)
-![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ## 🌟 Features
 
@@ -65,7 +62,7 @@ npm run dev
 yarn dev
 ```
 
-The website will be available at `http://localhost:3000`
+The website will be available at `http://localhost:5173`
 
 ## 🛠️ Technology Stack
 
@@ -88,31 +85,6 @@ The website will be available at `http://localhost:3000`
 -   **ESLint** for code quality (recommended)
 -   **Prettier** for code formatting (recommended)
 -   **Git** for version control
-
-## 📁 Project Structure
-
-```
-unity-homecare-website/
-├── src/
-│   ├── components/
-│   │   └── UnityHomeCare.tsx    # Main website component
-│   ├── types/
-│   │   └── index.ts             # TypeScript type definitions
-│   ├── styles/
-│   │   └── globals.css          # Global styles and Tailwind imports
-│   └── utils/
-│       └── constants.ts         # App constants and configuration
-├── public/
-│   ├── favicon.ico              # Website favicon
-│   └── images/                  # Static images and assets
-├── docs/
-│   ├── PRD.md                   # Product Requirements Document
-│   └── DEPLOYMENT.md            # Deployment guidelines
-├── package.json                 # Project dependencies and scripts
-├── tsconfig.json               # TypeScript configuration
-├── tailwind.config.js          # Tailwind CSS configuration
-└── README.md                   # This file
-```
 
 ## 🎨 Design System
 
@@ -146,52 +118,6 @@ unity-homecare-website/
 -   **Grid System**: CSS Grid with responsive breakpoints
 -   **Spacing Scale**: Tailwind's consistent spacing system (4px base unit)
 
-## 🔧 Configuration
-
-### **Environment Variables**
-
-Create a `.env.local` file in the root directory:
-
-```bash
-# Contact Information
-NEXT_PUBLIC_PHONE="+254700000000"
-NEXT_PUBLIC_EMAIL="info@unityhomecare.co.ke"
-NEXT_PUBLIC_ADDRESS="Nairobi, Kenya - Westlands District"
-
-# Analytics (Optional)
-NEXT_PUBLIC_GA_ID="GA_MEASUREMENT_ID"
-
-# Business Information
-NEXT_PUBLIC_BUSINESS_NAME="Unity Home Care Services"
-NEXT_PUBLIC_BUSINESS_HOURS="24/7 Emergency Support Available"
-```
-
-### **Tailwind Configuration**
-
-The project uses Tailwind CSS 4.1 with custom configurations:
-
-```javascript
-// tailwind.config.js
-module.exports = {
-	darkMode: "class",
-	theme: {
-		extend: {
-			colors: {
-				primary: {
-					50: "#eff6ff",
-					500: "#3b82f6",
-					900: "#1e3a8a",
-				},
-			},
-			animation: {
-				"fade-in": "fadeIn 0.5s ease-in-out",
-				"slide-up": "slideUp 0.3s ease-out",
-			},
-		},
-	},
-};
-```
-
 ## 📋 Available Scripts
 
 ```bash
@@ -210,62 +136,6 @@ npm run test:e2e     # Run end-to-end tests
 npm run deploy       # Deploy to hosting platform
 ```
 
-## 🌐 Browser Support
-
-### **Desktop Browsers**
-
--   ✅ Chrome 90+
--   ✅ Firefox 88+
--   ✅ Safari 14+
--   ✅ Edge 90+
-
-### **Mobile Browsers**
-
--   ✅ iOS Safari 14+
--   ✅ Chrome Mobile 90+
--   ✅ Samsung Internet 13+
-
-### **Responsive Breakpoints**
-
--   **Mobile**: 320px - 767px
--   **Tablet**: 768px - 1023px
--   **Desktop**: 1024px - 1439px
--   **Large Desktop**: 1440px+
-
-## 🚀 Deployment
-
-### **Vercel (Recommended)**
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Production deployment
-vercel --prod
-```
-
-### **Netlify**
-
-```bash
-# Build the project
-npm run build
-
-# Deploy build folder to Netlify
-# Drag and drop 'build' folder to Netlify dashboard
-```
-
-### **Traditional Hosting**
-
-```bash
-# Build for production
-npm run build
-
-# Upload contents of 'build' folder to your web server
-```
-
 ## 📊 Performance Optimization
 
 ### **Implemented Optimizations**
@@ -275,13 +145,6 @@ npm run build
 -   📦 **Bundle Optimization** with tree shaking
 -   🖼️ **Image Optimization** with modern formats
 -   💾 **Caching Strategy** for static assets
-
-### **Performance Targets**
-
--   **Lighthouse Score**: 90+ for all metrics
--   **First Contentful Paint**: < 1.5s
--   **Largest Contentful Paint**: < 2.5s
--   **Cumulative Layout Shift**: < 0.1
 
 ## ♿ Accessibility Features
 
@@ -314,22 +177,21 @@ npm run build
 
 ### **Unity Home Care Services**
 
--   **Phone**: [+254 700 000 000](tel:+254700000000) _(24/7 Emergency Support)_
--   **Email**: [info@unityhomecare.co.ke](mailto:info@unityhomecare.co.ke)
--   **Location**: Nairobi, Kenya - Westlands District
+-   **Phone**: [+254 703 919 412](tel:+254703919412) _(24/7 Emergency Support)_
+-   **Email**: [unityhomecare874@gmail.com](mailto:unityhomecare874@gmail.com)
+-   **Location**: Nairobi, Kenya
 -   **Hours**: 24/7 availability for emergencies
 
 ### **Development Team**
 
--   **Developer**: [Your Name](mailto:your.email@example.com)
--   **Repository**: [GitHub Repository](https://github.com/your-username/unity-homecare-website)
--   **Issues**: [Report Issues](https://github.com/your-username/unity-homecare-website/issues)
+-   **Developer**: [Shedrack Okunda](mailto:okundashedrack@gmail.com)
+-   **Repository**: [GitHub Repository](https://github.com/shedrack-okunda/Unity-HomeCare-Services)
 
 ## 📄 License
 
 This project is developed for Unity Home Care Services. All rights reserved.
 
-For licensing inquiries, please contact: [info@unityhomecare.co.ke](mailto:info@unityhomecare.co.ke)
+For licensing inquiries, please contact: [unityhomecare874@gmail.com](mailto:unityhomecare874@gmail.com)
 
 ## 🤝 Contributing
 
@@ -355,40 +217,21 @@ Need help with the website? Here are your options:
 
 ### **Technical Support**
 
--   📧 **Email**: [developer@example.com](mailto:developer@example.com)
+-   📧 **Email**: [okundashedrack@gmail.com](mailto:okundashedrack@gmail.com)
 -   📱 **Phone**: Available during business hours
 -   💬 **Slack**: #unity-homecare-website
 
 ### **Business Support**
 
--   📧 **Unity Home Care**: [info@unityhomecare.co.ke](mailto:info@unityhomecare.co.ke)
--   📱 **Emergency**: [+254 700 000 000](tel:+254700000000)
+-   📧 **Unity Home Care**: [unityhomecare874@gmail.com](mailto:unityhomecare874@gmail.com)
+-   📱 **Emergency**: [+254 719 346 472](tel:+254719346472)
 
 ## 📈 Roadmap
 
-### **Phase 1 - Current** ✅
-
--   Responsive website with service showcase
--   Dark/light mode toggle
--   Contact information integration
--   Mobile optimization
-
-### **Phase 2 - Next Quarter** 🔄
-
--   Contact form implementation
--   Client testimonials section
--   Blog/news section
--   SEO enhancements
-
-### **Phase 3 - Future** 📋
-
--   Client portal integration
--   Online appointment booking
--   Service area mapping
--   Multilingual support (Swahili)
-
----
-
-**Last Updated**: July 2025  
-**Version**: 1.0.0  
+**Last Updated**: July 2025
+**Version**: 1.0.0
 **Status**: Production Ready ✅
+
+```
+
+```

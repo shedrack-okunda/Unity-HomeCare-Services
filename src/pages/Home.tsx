@@ -14,77 +14,12 @@ import {
 	X,
 	ArrowRight,
 } from "lucide-react";
+import { services } from "./Services";
 
 const UnityHomeCare = () => {
 	const [darkMode, setDarkMode] = useState(false);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [activeService, setActiveService] = useState(0);
-
-	const services = [
-		{
-			title: "Post Discharge Care",
-			description:
-				"Comprehensive support during your transition from hospital to home, ensuring continuity of care and peace of mind.",
-			icon: "🏥",
-			color: "from-blue-500 to-cyan-500",
-		},
-		{
-			title: "Mobility Assistance",
-			description:
-				"Safe and dignified support for daily movement, helping maintain independence and prevent falls.",
-			icon: "🚶‍♂️",
-			color: "from-green-500 to-emerald-500",
-		},
-		{
-			title: "Feeding & Nutrition Support",
-			description:
-				"Personalized meal planning and feeding assistance to maintain optimal health and nutrition.",
-			icon: "🍎",
-			color: "from-orange-500 to-red-500",
-		},
-		{
-			title: "Wound Care Management",
-			description:
-				"Professional wound assessment, cleaning, and dressing changes following medical protocols.",
-			icon: "🩹",
-			color: "from-pink-500 to-rose-500",
-		},
-		{
-			title: "Monitoring Vitals",
-			description:
-				"Regular monitoring of blood pressure, temperature, pulse, and other vital signs for your safety.",
-			icon: "📊",
-			color: "from-purple-500 to-violet-500",
-		},
-		{
-			title: "Bathing & Grooming",
-			description:
-				"Respectful personal care assistance maintaining dignity while ensuring cleanliness and comfort.",
-			icon: "🛁",
-			color: "from-teal-500 to-cyan-500",
-		},
-		{
-			title: "Elderly Home Care",
-			description:
-				"Specialized care for seniors, promoting aging in place with comfort, safety, and companionship.",
-			icon: "👵",
-			color: "from-indigo-500 to-blue-500",
-		},
-		{
-			title: "Medication Administration",
-			description:
-				"Safe and accurate medication management ensuring proper dosages and timing as prescribed.",
-			icon: "💊",
-			color: "from-yellow-500 to-orange-500",
-		},
-		{
-			title: "Professional Nursing Care",
-			description:
-				"Licensed nursing professionals providing skilled medical care in the comfort of your home.",
-			icon: "👩‍⚕️",
-			color: "from-emerald-500 to-teal-500",
-		},
-	];
 
 	useEffect(() => {
 		const interval = setInterval(() => {
