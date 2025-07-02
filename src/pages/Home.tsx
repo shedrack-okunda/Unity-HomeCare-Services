@@ -20,6 +20,7 @@ const UnityHomeCare = () => {
 	const [darkMode, setDarkMode] = useState(false);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [activeService, setActiveService] = useState(0);
+	console.log(activeService);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
