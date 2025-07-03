@@ -5,7 +5,7 @@ export const services = [
 			"Comprehensive support during your transition from hospital to home, ensuring continuity of care and peace of mind.",
 		icon: "🏥",
 		color: "from-blue-500 to-cyan-500",
-		image: "../../public/images/postdischarge.avif",
+		image: "/images/postdischarge.avif",
 	},
 	{
 		title: "Mobility Assistance",
@@ -13,7 +13,7 @@ export const services = [
 			"Safe and dignified support for daily movement, helping maintain independence and prevent falls.",
 		icon: "🚶‍♂️",
 		color: "from-green-500 to-emerald-500",
-		image: "../../public/images/mobility.avif",
+		image: "/images/mobility.avif",
 	},
 	{
 		title: "Feeding & Nutrition Support",
@@ -30,7 +30,7 @@ export const services = [
 			"Professional wound assessment, cleaning, and dressing changes following medical protocols.",
 		icon: "🩹",
 		color: "from-pink-500 to-rose-500",
-		image: "../../public/images/wound.avif",
+		image: "/images/wound.avif",
 	},
 	{
 		title: "Monitoring Vitals",
@@ -38,7 +38,7 @@ export const services = [
 			"Regular monitoring of blood pressure, temperature, pulse, and other vital signs for your safety.",
 		icon: "📊",
 		color: "from-purple-500 to-violet-500",
-		image: "../../public/images/monitoring.avif",
+		image: "/images/monitoring.avif",
 	},
 	{
 		title: "Bathing & Grooming",
@@ -46,7 +46,7 @@ export const services = [
 			"Respectful personal care assistance maintaining dignity while ensuring cleanliness and comfort.",
 		icon: "🛁",
 		color: "from-teal-500 to-cyan-500",
-		image: "../../public/images/bathing.avif",
+		image: "/images/bathing.avif",
 	},
 	{
 		title: "Elderly Home Care",
@@ -54,7 +54,7 @@ export const services = [
 			"Specialized care for seniors, promoting aging in place with comfort, safety, and companionship.",
 		icon: "👵",
 		color: "from-indigo-500 to-blue-500",
-		image: "../../public/images/elderly.avif",
+		image: "/images/elderly.avif",
 	},
 	{
 		title: "Medication Administration",

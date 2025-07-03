@@ -307,7 +307,7 @@ const UnityHomeCare = () => {
 
 						<div className="relative">
 							<img
-								src="../../public/images/hero.avif"
+								src="/images/hero.avif"
 								alt="Professional nurse providing compassionate care to elderly patient"
 								className="w-full h-auto rounded-2xl shadow-2xl object-cover"
 							/>
