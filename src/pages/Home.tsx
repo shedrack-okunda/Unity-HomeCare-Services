@@ -347,57 +347,50 @@ const UnityHomeCare = () => {
 						{services.map((service, index) => (
 							<div
 								key={index}
-								className={`group relative overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl ${
+								className={`group relative overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-gradient-to-br ${
 									darkMode
-										? "bg-gray-900 hover:shadow-blue-500/10"
-										: "bg-white hover:shadow-blue-500/10"
+										? "from-gray-900 via-gray-800 to-gray-900"
+										: "from-blue-50 via-purple-100 to-blue-50"
 								} border ${
 									darkMode
 										? "border-gray-700"
 										: "border-gray-100"
-								}`}>
-								{/* Background Image */}
-								<div className="absolute inset-0 overflow-hidden">
-									<img
-										src={service.image}
-										alt={service.title}
-										className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-									/>
-									<div
-										className={`absolute inset-0 bg-gradient-to-t ${
-											darkMode
-												? "from-gray-900/95 via-gray-900/80 to-gray-900/60"
-												: "from-white/95 via-white/10 to-white/10"
-										}  group-hover:to-gray-900/50 transition-all duration-300`}></div>
-								</div>
-
-								{/* Content */}
-								<div className="relative z-10 p-4 sm:p-6 lg:p-8 h-full flex flex-col">
-									{/* Icon */}
+								} flex flex-col`}>
+								{/* Icon + Title */}
+								<div className="relative z-10 p-4 sm:p-6 lg:p-8">
 									<div
 										className={`w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl bg-gradient-to-r ${service.color} flex items-center justify-center text-lg sm:text-xl lg:text-2xl mb-4 sm:mb-5 lg:mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
 										{service.icon}
 									</div>
-
-									{/* Title */}
 									<h3
 										className={`text-lg sm:text-xl lg:text-xl font-bold mb-3 sm:mb-4 lg:mb-4 ${
 											darkMode
-												? "text-white"
-												: "text-gray-900"
-										}   group-hover:${
+												? "text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r"
+												: "text-transparent bg-clip-text bg-gradient-to-r"
+										} ${
 											service.color
-										}  transition-all duration-300`}>
+										} transition-all duration-300`}>
 										{service.title}
 									</h3>
+								</div>
 
-									{/* Description */}
+								{/* Image */}
+								<div className="relative w-full h-48 sm:h-52 lg:h-56 overflow-hidden">
+									<img
+										src={service.image}
+										alt={service.title}
+										className="w-full h-full object-cover transition-all duration-700 brightness-75 group-hover:brightness-60 group-hover:scale-110"
+									/>
+								</div>
+
+								{/* Description */}
+								<div className="relative z-10 p-4 sm:px-6 lg:px-8 pb-6 flex-grow flex flex-col">
 									<p
-										className={`text-md font-semibold md:text-base lg:text-base ${
+										className={`text-md font-semibold md:text-base lg:text-base leading-relaxed transition-all duration-300 ${
 											darkMode
-												? "text-gray-200"
-												: "text-gray-900"
-										} leading-relaxed flex-grow`}>
+												? `text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r ${service.color}`
+												: "text-gray-700"
+										}`}>
 										{service.description}
 									</p>
 
@@ -680,9 +673,9 @@ const UnityHomeCare = () => {
 								{" / "}
 							</span>
 							<a
-								href="tel:+254719346472"
+								href="tel:+254724551516"
 								className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-								+254 719 346 472
+								+254 724 551 516
 							</a>
 						</div>
 
